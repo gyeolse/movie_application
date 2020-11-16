@@ -13,3 +13,5 @@ movie application 구현
 - `create-react- app movieapplication`
 - `yarn start`
 - github repository 연동 
+
+2. (2020.11.16)
