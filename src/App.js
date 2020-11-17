@@ -3,6 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import About from "./routes/About"; //이름ㄹ이 같을 필요는 없음 About as Potato라고 해도 됨.
 import Home from './routes/Home';
 import Navigation from './components/Navigation';
+import MovieDetail from './routes/MovieDetail';
 
 function App () {
   return (
@@ -10,10 +11,12 @@ function App () {
       <Navigation />
       <Route path="/" exact={true} component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/movie-detail/:id" component={MovieDetail} />
     </HashRouter>
   );
 }
 
+//추가 movie-detail에 id값을 받고자 할 때 `/:id` 이런 식으로, 그 후 라우터 세팅
 export default App;
 
 /**
