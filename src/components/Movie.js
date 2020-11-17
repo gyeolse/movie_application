@@ -9,12 +9,11 @@ import {Link} from 'react-router-dom';
 function Movie({id,year, title, summary, poster, genres}) {
     return ( 
         //추가. route 설정
-
         <div className="movie">
             <img src={poster} alt={title} title={title} />
             <div className="movies__data">
             <Link to={{
-                pathname:`/movie-detail/${id}`,
+                pathname:`/movie/${id}`,
                 state:{
                     year:year, //ES6에서는 year만 쳐줘도 됨
                     title,

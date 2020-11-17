@@ -1,14 +1,11 @@
 import React from "react";
 
 function About() {
-    return <span>Hello i'm About.js </span>
+    return (
+        <div>
+            <h1>README.md </h1>
+            <a href="https://raw.githubusercontent.com/gyeolse/movie_application/master/README.md">LINK</a>
+        </div>
+    )
 }
-
 export default About;
-
-
-/**
- * route를 거치면, props에 history. location. 과 같은ㅇ 기본적인 props가 세팅되어서 컴포넌트 간 이동된다.  
- * 
- * 1. navigation.js에서 pathname과 state를 재정의
- */

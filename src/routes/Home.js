@@ -17,7 +17,7 @@ class Home extends React.Component {
     //this.setState({movies : movies});와 같다. 
     this.setState({movies, isLoading : false });
 
-    console.log(movies);
+//    console.log(movies);
   }
   //componentDidMount에서 data를 fetch하는 역할을 함. 
   componentDidMount() {
